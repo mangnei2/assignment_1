@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    padding: 0;
+    margin: o;
+}
+.navbar{
+    display: flex;
+    padding-left: 55%;
+    width: 100%;
+    position:fixed ;
+}
+.ch{
+    display: flex;
+    padding-left: 8%;
+    position:fixed ;
+    color: black;
+}
+.navbar a{
+    color: black;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    float: right;
+}
