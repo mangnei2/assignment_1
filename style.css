@@ -1,12 +1,14 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: mnfont;
+    src: url(/assests/font/myanmar\ mn_1.zip);
+}
 body{
     background-color: aliceblue;
     padding: 0;
     margin: o;
-    font-family: 'Inter', sans-serif;
-}
 .navbar{
     display: flex;
     padding-left: 55%;
