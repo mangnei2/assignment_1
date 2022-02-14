@@ -10,11 +10,12 @@ body{
     padding: 0;
     margin: o;
     font-family: "MyanmarMN";
+}
 .navbar{
     display: flex;
     padding-left: 55%;
     width: 100%;
-    position:fixed ;
+    position: fixed;
 }
 .logo{
     display: flex;
