@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: mnfont;
-    src: url(/assests/font/myanmar\ mn_1.zip);
+    font-family: "MyanmarMN";
+    src: url(/assests/font/myanmar\ mn_1.ttf);
 }
 body{
     background-color: aliceblue;
     padding: 0;
     margin: o;
+    font-family: "MyanmarMN";
 .navbar{
     display: flex;
     padding-left: 55%;
