@@ -5,6 +5,7 @@ body{
     background-color: aliceblue;
     padding: 0;
     margin: o;
+    font-family: 'Inter', sans-serif;
 }
 .navbar{
     display: flex;
@@ -12,7 +13,7 @@ body{
     width: 100%;
     position:fixed ;
 }
-.ch{
+.logo{
     display: flex;
     padding-left: 6%;
     padding-bottom: 2%;
@@ -27,13 +28,13 @@ body{
     padding: 10px 25px;
     font-size: 20px;
 }
-.topic{
+.top_header{
     width: 65%;
     padding-top: 50px;
-    padding-left: 9%;
+    padding-left: 120px;
     font-size: 50px;
 } 
-.main{
+.main_images{
     display: flex;
     padding-left: 120px;
     width: 100%;
