@@ -6,41 +6,44 @@
     src: url(/assests/font/myanmar\ mn_1.ttf);
 }
 body{
-    background-color: aliceblue;
-    padding: 0;
-    margin: o;
     font-family: "MyanmarMN";
 }
-.navbar{
+nav{
     display: flex;
-    padding-left: 55%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
     position: fixed;
 }
 .logo{
-    display: flex;
-    padding-left: 6%;
-    padding-bottom: 2%;
-    position:fixed ;
     color: black;
     font-size: 27px;
 }
-.navbar a{
-    color: black;
+nav ul{
     list-style-type: none;
+  }
+  nav ul li{
     display: inline-block;
     padding: 10px 25px;
-    font-size: 20px;
+  }
 }
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+  }
 .top_header{
     width: 65%;
-    padding-top: 50px;
-    padding-left: 120px;
-    font-size: 50px;
+    padding-top: 100px;
+    margin-left: 120px;
+    font-size: 40px;
 } 
 .main_images{
     display: flex;
-    padding-left: 120px;
+    margin-left: 120px;
     width: 100%;
 }
 .alien{
@@ -49,6 +52,17 @@ padding-right: 20px;
 .man{
 padding-right: 20px;
 }
-girl{
+.girl{
 padding-right: 20px;
+}
+.foodimage-text{
+display: flex;
+align-items: center;
+margin-left: 120px;
+}
+.about-text{
+    margin-left: 25px;
+}
+.highlights{
+    margin-left: 120px;
 }
