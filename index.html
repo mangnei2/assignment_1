@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
         , initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <h1 class="logo">Ch</h1>
-            <ul>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Buy Tickets</a></li>
-            </ul>
-        </nav>
-        
-        <div class="top_header">
-            <h1>Selections from the Art Institute of Chicago</h1>
-        </div>
-        <div class="main_images">
-             <div class="alien"> <img src="assests/images/aliens.jpeg" width="385" height="210">
-                <p style="font-size: 20px;">Henri Martisse Modern ArtGallery 391 French, 1869-1954</p></div>
-             <div class="man"><img src="assests/images/man.jpeg" width="560" height="560">
-                <p>Henri Matisse considered Bathers by a river to be one of the five most "pivotal" bright works of his carrer.</p></div>
-            <div class="girl"> <img src="assests/images/girl.jpeg" width="300" height="410"></div>
-        </div>
-        <div class="foodimage-text">
-            <img src="assests/images/food.jpeg">
-            <div class="about-text">
-                <p>Henri Martisse<br>Oil canvas<br>Gallery<br>Membership</p>
-                <p>Art, Paul Cezanne once claimed,<br>is a harmony running parallel to<br>the real nature.</p>
-                <p>This painting, one of Cezanne's<br>rare signed works, was part of<br>an important exhibition.</p>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">Ch</h1>
+        <ul>
+            <li><a class="paragraph-text" href="#">Collection</a></li>
+            <li><a href="#">Exhibitions</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Buy Tickets</a></li>
+        </ul>
+    </nav>
+
+    <div class="top_header">
+        <h1>Selections from the Art Institute of Chicago</h1>
+    </div>
+    <div class="main_images">
+
+        <div class="features-wrapper">
+
+            <div class="feature-item-container">
+                <div class="feature-image-wrapper">
+                    <img src="assests/images/aliens.jpeg" 
+                    class="feature-image">
+                </div>
+                <p style="font-size: 20px;" class="paragraph-text">Henri Martisse Modern ArtGallery 391 French,
+                    1869-1954</p>
+            </div>
+            <div class="feature-item-container">
+                <div class="feature-image-wrapper">
+                    <img src="assests/images/man.jpeg" class="feature-image">
+                </div>
+                <p style="font-size: 20px;" class="paragraph-text">Henri Martisse Modern ArtGallery 391 French,
+                    1869-1954</p>
+            </div>
+            
+            <div class="feature-item-container">
+                <div class="feature-image-wrapper">
+                    <img src="assests/images/girl.jpeg" class="feature-image">
+                </div>
+                <p style="font-size: 20px;" class="paragraph-text">Henri Martisse Modern ArtGallery 391 French,
+                    1869-1954</p>
             </div>
         </div>
-        <div class="highlights">
-            <p>enjoy the highlights from this<br>pioneering Collection.</p>
+
+    </div>
+    <!-- <div class="man"><img src="assests/images/man.jpeg" width="560" height="560">
+                <p style="font-size: 35px; width: 680px; letter-spacing: 1px;">Henri Matisse considered Bathers by a<br> to be one of the five most "pivotal"<br>bright works of his carrer.</p></div>
+            <div class="girl"> <img src="assests/images/girl.jpeg" width="300" height="410"></div> -->
+    </div>
+    <div class="foodimage-text">
+        <img src="assests/images/food.jpeg">
+        <div class="about-text">
+            <h4>Henri Martisse<br>Oil canvas<br>Gallery<br>Membership</h4>
+            <p class="paragraph-text">Art, Paul Cezanne once claimed,<br>is a harmony running parallel to<br>the real
+                nature.</p>
+            <p class="paragraph-text">This painting, one of Cezanne's<br>rare signed works, was part of<br>an important
+                exhibition.</p>
         </div>
-    </body>
+    </div>
+    <div class="highlight-bottom1">
+        <h4 class="paragraph-text">Enjoy the highlights from this<br>pioneering Collection.</h4>
+        <h2 class="paragraph-text m-font-size">This painting, one of Cezanne's rare signed<br>works, was part of an
+            important exhibition<br> urged on the artist by the Parisian art<br>dealer Ambroise Vollard in 1895.</h2>
+    </div>
+</body>
+
 </html>

@@ -1,68 +1,116 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "MyanmarMN";
-    src: url(/assests/font/myanmar\ mn_1.ttf);
+    src        : url(/assests/font/myanmar\ mn_1.ttf);
 }
-body{
-    font-family: "MyanmarMN";
-}
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+nav {
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-    position: fixed;
+    width          : 100%;
+    padding-top    : 45px;
+    padding-left   : 8%;
+    padding-right  : 8%;
+    position       : fixed;
 }
-.logo{
-    color: black;
+
+.logo {
+    color    : black;
     font-size: 27px;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
-  }
-  nav ul li{
+}
+
+nav ul li {
     display: inline-block;
     padding: 10px 25px;
-  }
+
 }
-nav ul li a:hover{
-    color: #f9004d;
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color     : #f9004d;
     transition: .4s;
-  }
-.top_header{
-    width: 65%;
+    text-decoration: underline;
+}
+
+.top_header {
+    width      : 65%;
     padding-top: 100px;
     margin-left: 120px;
-    font-size: 40px;
-} 
-.main_images{
-    display: flex;
+    font-size  : 40px;
+    font-family: "MyanmarMN";
+}
+
+.main_images {
+    display    : flex;
     margin-left: 120px;
+}
+
+.alien {
+    padding-right: 20px;
+}
+
+.man {
+    padding-right: 20px;
+}
+
+.girl {
+    padding-right: 20px;
+}
+
+.foodimage-text {
+    display    : flex;
+    align-items: center;
+    margin-left: 120px;
+    margin-top : 50px;
+}
+
+.about-text {
+    margin-left: 25px;
+    font-size  : 19px;
+}
+
+.about-text h4 {
+    padding-bottom : 80px;
+    text-decoration: underline;
+}
+
+.highlight-bottom1 {
+    display    : flex;
+    margin-left: 120px;
+    margin-top : 40px;
+}
+
+.highlight-bottom1 h2 {
+    justify-content: left;
+    padding-left   : 210px;
+}
+.paragraph-text{
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+}
+.m-font-size{
+    font-size: 24px;
+}
+.feature-image-wrapper{
+    width: 350px;
+}
+.feature-image{
     width: 100%;
 }
-.alien{
-padding-right: 20px;
-}
-.man{
-padding-right: 20px;
-}
-.girl{
-padding-right: 20px;
-}
-.foodimage-text{
+.features-wrapper{
 display: flex;
-align-items: center;
-margin-left: 120px;
-}
-.about-text{
-    margin-left: 25px;
-}
-.highlights{
-    margin-left: 120px;
+flex-direction: row;
 }
