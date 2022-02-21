@@ -45,14 +45,14 @@ nav ul li a:hover {
 }
 
 .top_header {
-    width      : 65%;
+    width      : 50%;
     padding-top: 100px;
     margin-left: 120px;
-    font-size  : 40px;
+    font-size  : 43px;
     font-family: "MyanmarMN";
 }
 
-.main_images {
+/* .main_images {
     display    : flex;
     margin-left: 120px;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover {
 
 .girl {
     padding-right: 20px;
-}
+} */
 
 .foodimage-text {
     display    : flex;
@@ -104,13 +104,18 @@ nav ul li a:hover {
 .m-font-size{
     font-size: 24px;
 }
+.features-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    }
 .feature-image-wrapper{
-    width: 350px;
+    width: 450px;
 }
 .feature-image{
     width: 100%;
+    padding-right: 50px;
 }
-.features-wrapper{
-display: flex;
-flex-direction: row;
+.paragraph-text{
+    font-family: "Inter";
 }
