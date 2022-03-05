@@ -22,6 +22,7 @@ nav {
 .logo {
     color    : black;
     font-size: 27px;
+    font-family: "Inter";
 }
 
 nav ul {
@@ -51,6 +52,9 @@ nav ul li a:hover {
     margin-left: 120px;
     font-size  : 43px;
     font-family: "MyanmarMN";
+}
+.top_header-item{
+    line-height: 84px;
 }
 
 /* .main_images {
