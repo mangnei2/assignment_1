@@ -49,7 +49,7 @@ nav ul li a:hover {
 .top_header {
     width      : 50%;
     padding-top: 100px;
-    margin-left: 120px;
+    padding-left: 120px;
     font-size  : 43px;
     font-family: "MyanmarMN";
 }
@@ -57,22 +57,6 @@ nav ul li a:hover {
     line-height: 84px;
 }
 
-/* .main_images {
-    display    : flex;
-    margin-left: 120px;
-}
-
-.alien {
-    padding-right: 20px;
-}
-
-.man {
-    padding-right: 20px;
-}
-
-.girl {
-    padding-right: 20px;
-} */
 .m-font-size {
     font-size: 24px;
 }
@@ -80,7 +64,9 @@ nav ul li a:hover {
 .features-wrapper {
     display       : flex;
     flex-direction: row;
-    margin-left   : 120px;
+    padding-left   : 120px;
+    margin: auto;
+    width: 1415px;
 }
 
 .feature-image-wrapper {
@@ -99,8 +85,7 @@ nav ul li a:hover {
 .foodimage-text {
     display    : flex;
     align-items: center;
-    margin-left: 120px;
-    margin-top : 50px;
+    padding-left: 120px;
 }
 
 .about-text {
@@ -131,10 +116,19 @@ nav ul li a:hover {
 }
 .highlight-bottom2{
     display: flex;
-    margin-left: 120px;
-    margin-top: 60px;
+    padding-left: 120px;
+    margin: auto;
+    width: 1200px;
 }
 .highlight-bottom2 p{
     justify-content: left;
     padding-left: 295px;
+}
+section{
+    min-height: 100vh;
+    padding-top: 200px;
+}
+.second-container{
+    margin: auto;
+    width: 1350px;
 }
