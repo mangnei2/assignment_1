@@ -1,5 +1,9 @@
-* {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
@@ -7,7 +11,7 @@
     src        : url(/assests/font/myanmar\ mn_1.ttf);
 }
 
-nav {
+/* nav { 
     display        : flex;
     flex-wrap      : wrap;
     align-items    : center;
@@ -20,8 +24,8 @@ nav {
 }
 
 .logo {
-    color    : black;
-    font-size: 27px;
+    color      : black;
+    font-size  : 27px;
     font-family: "Inter";
 }
 
@@ -45,15 +49,202 @@ nav ul li a:hover {
     transition     : .4s;
     text-decoration: underline;
 }
+*/
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: small;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background: #16a083;
+  }
+  
+  .btn-primary:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* ............/navbar/............ *
+  
+  /* desktop mode............/// */
+  
+  .navbar input[type="checkbox"],
+  .navbar .hamburger-lines {
+    display: none;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  
+  .menu-items {
+    order: 2;
+    display: flex;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logo {
+    order: 1;
+    font-size: 27px;
+    font-family: "Inter";
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      opacity: 0.95;
+    }
+  
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+  
+    .navbar-container {
+      display: block;
+      position: relative;
+      height: 64px;
+    }
+  
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #333;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow: 5px 0px 10px 0px #aaa;
+    }
+  
+    .navbar .menu-items li {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 2rem;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
+  
 
 .top_header {
-    width      : 50%;
-    padding-top: 100px;
+    width       : 50%;
+    padding-top : 100px;
     padding-left: 120px;
-    font-size  : 43px;
-    font-family: "MyanmarMN";
+    font-size   : 43px;
+    font-family : "MyanmarMN";
 }
-.top_header-item{
+
+.top_header-item {
     line-height: 84px;
 }
 
@@ -64,9 +255,9 @@ nav ul li a:hover {
 .features-wrapper {
     display       : flex;
     flex-direction: row;
-    padding-left   : 120px;
-    margin: auto;
-    width: 1415px;
+    padding-left  : 120px;
+    margin        : auto;
+    width         : 1415px;
 }
 
 .feature-image-wrapper {
@@ -83,8 +274,8 @@ nav ul li a:hover {
 }
 
 .foodimage-text {
-    display    : flex;
-    align-items: center;
+    display     : flex;
+    align-items : center;
     padding-left: 120px;
 }
 
@@ -114,21 +305,25 @@ nav ul li a:hover {
     font-family: "Inter";
     font-weight: 400;
 }
-.highlight-bottom2{
-    display: flex;
+
+.highlight-bottom2 {
+    display     : flex;
     padding-left: 120px;
-    margin: auto;
-    width: 1200px;
+    margin      : auto;
+    width       : 1200px;
 }
-.highlight-bottom2 p{
+
+.highlight-bottom2 p {
     justify-content: left;
-    padding-left: 295px;
+    padding-left   : 295px;
 }
-section{
-    min-height: 100vh;
+
+section {
+    min-height : 100vh;
     padding-top: 200px;
 }
-.second-container{
+
+.second-container {
     margin: auto;
-    width: 1350px;
+    width : 1350px;
 }
